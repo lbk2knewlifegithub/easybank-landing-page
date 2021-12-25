@@ -11,7 +11,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <button [class.active]="active" (click)="onMenu()" class="menu grid gap-1">
-      <img [src]="src" [alt]="name | titlecase" />
+      <img id="menu" [src]="src" [alt]="name | titlecase" />
     </button>
   `,
 })

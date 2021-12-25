@@ -33,9 +33,5 @@ export class EasybankPageComponent {
   constructor() {
     this.features$ = of(fromData.features);
     this.articles$ = of(fromData.articles);
-
-    setTimeout(() => {
-      window.scrollTo(0, document.body.scrollHeight);
-    }, 100);
   }
 }

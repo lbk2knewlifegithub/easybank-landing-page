@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { listAnimation } from 'src/app/shared/animations/list.anim';
 
 @Component({
   selector: 'lbk-links-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <ul class="">
+    <ul @listAnimation>
       <li><a class="animate-link" routerLink="/">Home</a></li>
       <li><a class="animate-link" routerLink="/">About</a></li>
       <li><a class="animate-link" routerLink="/">Contact</a></li>
@@ -16,13 +17,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     `
       ul {
         @apply flex items-center text-sm gap-10 text-muted tracking-wide lg:text-base;
-        li{
-          a{
+        li {
+          a {
             @apply pb-8 hover:text-black;
           }
         }
       }
     `,
   ],
+  animations: [listAnimation({ delayEnter: 200 })],
 })
 export class LinksHeaderComponent {}
