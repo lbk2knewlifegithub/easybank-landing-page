@@ -1,12 +1,11 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { fadeInOnEnterAnimation } from 'angular-animations';
 import { Feature } from '../models/feature.model';
 
 @Component({
   selector: 'lbk-feature-card-list',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <section @fadeInOnEnter class="bg-muted py-20 md:py-24 lg:py-32">
+    <section class="bg-muted py-20 md:py-24 lg:py-32">
       <div class="container space-y-20 lg:space-y-16">
         <!-- text -->
         <div
@@ -36,7 +35,6 @@ import { Feature } from '../models/feature.model';
       </div>
     </section>
   `,
-  animations: [fadeInOnEnterAnimation({ delay: 200 })],
 })
 export class FeatureCardListComponent {
   @Input() features!: Feature[];
