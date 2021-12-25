@@ -1,6 +1,6 @@
 <h1>Frontend mentor <a target="_blank" href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN">Easybank landing page</a></h1>
  
-<a href="">
+<a href="https://friendly-lichterman-f638df.netlify.app">
 <p>My site deployed to Netlify</p>
 </a>
 
