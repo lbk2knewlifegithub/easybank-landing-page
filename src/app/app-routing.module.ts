@@ -3,14 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+    path: 'easybank',
+    loadChildren: () =>
+      import('./easybank/easybank.module').then((m) => m.EasybankModule),
   },
-  // {
-  //   path: '',
-  //   redirectTo: '/home',
-  //   pathMatch: 'full',
-  // },
+  {
+    path: '',
+    redirectTo: '/easybank',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({

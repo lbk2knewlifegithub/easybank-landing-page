@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './containers';
+import { EasybankPageComponent } from './containers';
 
-const routes: Routes = [{ path: '', component: HomePageComponent }];
+const routes: Routes = [{ path: '', component: EasybankPageComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class HomeRoutingModule {}
+export class EasybankRoutingModule {}

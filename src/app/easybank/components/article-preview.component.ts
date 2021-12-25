@@ -35,5 +35,5 @@ import { Article } from '../models/article.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ArticlePreviewComponent {
-  @Input('article') article!: Article;
+  @Input() article!: Article;
 }

@@ -31,18 +31,15 @@ module.exports = {
       },
     },
     extend: {
-      // create custom fonts here
       fontFamily: {
         mono: ["'Public Sans'", ...defaultTheme.fontFamily.mono],
       },
-      // create custom text colors here
       textColor: {
         fill: withOpacity("--text-fill"),
         primary: withOpacity("--text-primary"),
         muted: withOpacity("--text-muted"),
         inverted: withOpacity("--text-inverted"),
       },
-      // create custom background colors here
       backgroundColor: {
         fill: withOpacity("--bg-fill"),
         footer: withOpacity("--bg-footer"),

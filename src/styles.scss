@@ -20,7 +20,7 @@
     --text-inverted: var(--light-grayish-blue);
 
     // background colors
-    --bg-fill: var(--very-light-gray);
+    --bg-fill: var(--white);
     --bg-footer: var(--dark-blue);
 
     // border colors
@@ -41,5 +41,34 @@
   .container-large {
     max-width: 1600px !important;
     margin: 0 auto;
+  }
+
+  .animate-link {
+    position: relative;
+    padding-bottom: 0.2rem;
+
+    &:hover {
+      &:before,
+      &:after {
+        width: 50%;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      height: 4px;
+      transition: width 0.2s ease-in-out;
+      background: hsl(var(--lime-green));
+      width: 0;
+    }
+
+    &:after {
+      transform-origin: left;
+      transform: rotate(-180deg);
+    }
   }
 }

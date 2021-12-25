@@ -1,4 +1,4 @@
-export * from './footer/footer.component'
-export * from './header.component'
-export * from './modal-box.component'
-export * from './socials.component'
+export * as fromFooter from './footer';
+export * as fromHeader from './header';
+export * from './logo.component';
+

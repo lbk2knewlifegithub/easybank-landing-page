@@ -3,24 +3,25 @@ import { NgModule } from '@angular/core';
 import {
   ArticlePreviewComponent,
   ArticlesPreviewListComponent,
-  FeatureCardComponent,
+  FeaturePreviewComponent,
   FeatureCardListComponent,
   IntroComponent
 } from './components';
-import { HomePageComponent } from './containers';
-import { HomeRoutingModule } from './home-routing.module';
+import { EasybankPageComponent } from './containers';
+import { EasybankRoutingModule } from './easybank-routing.module';
 
-export const CONTAINERS = [HomePageComponent];
+export const CONTAINERS = [EasybankPageComponent];
 
 export const COMPONENTS = [
   IntroComponent,
   ArticlePreviewComponent,
   ArticlesPreviewListComponent,
-  FeatureCardComponent,
+  FeaturePreviewComponent,
   FeatureCardListComponent,
 ];
+
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule],
+  imports: [CommonModule, EasybankRoutingModule],
   declarations: [CONTAINERS, COMPONENTS],
 })
-export class HomeModule {}
+export class EasybankModule {}

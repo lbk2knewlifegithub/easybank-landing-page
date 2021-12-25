@@ -5,7 +5,7 @@ import { Feature } from '../models/feature.model';
   selector: 'lbk-feature-card',
   template: `
     <div
-      class="grid gap-6 place-items-center mx-auto max-w-md desktop:place-items-start"
+      class="grid gap-6 place-items-center mx-auto max-w-md lg:place-items-start"
     >
       <!--  icon-->
       <div>
@@ -14,19 +14,19 @@ import { Feature } from '../models/feature.model';
       <!--  end icon-->
 
       <!--  name-->
-      <h4 class="text-center text-lg font-medium desktop:text-left desktop:font-semibold">
+      <h4 class="text-center text-lg font-medium lg:text-left lg:font-semibold">
         {{ feature.name }}
       </h4>
       <!--  end name-->
 
       <!--  description-->
-      <p class="text-muted text-center desktop:text-left">
+      <p class="text-muted text-center lg:text-left">
         {{ feature.description }}
       </p>
       <!--  end description-->
     </div>
   `,
 })
-export class FeatureCardComponent {
+export class FeaturePreviewComponent {
   @Input() feature!: Feature;
 }
