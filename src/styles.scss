@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    // colors
+    --dark-blue: 233, 26%, 24%;
+    --lime-green: 136, 65%, 51%;
+    --bright-cyan: 192, 70%, 51%;
+    --grayish-blue: 233, 8%, 62%;
+    --light-grayish-blue: 220, 16%, 96%;
+    --very-light-gray: 0, 0%, 98%;
+    --white: 0, 0%, 100%;
+
+    // text colors
+    --text-fill: var(--dark-blue);
+    --text-primary: var(--lime-green);
+    --text-muted: var(--grayish-blue);
+    --text-inverted: var(--light-grayish-blue);
+
+    // background colors
+    --bg-fill: var(--very-light-gray);
+    --bg-footer: var(--dark-blue);
+
+    // border colors
+    --border-primary: var(--lime-green);
+  }
+}
+
+@layer components {
+  //CUSTOM APPLY HERE
+  .btn {
+    @apply inline-block rounded-full px-5 py-2 text-white font-medium text-xs desktop:py-3 desktop:font-bold desktop:text-base desktop:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-lime-green to-bright-cyan hover:opacity-70;
+  }
+
+  .container-large {
+    max-width: 1600px !important;
+    margin: 0 auto;
+  }
+}
