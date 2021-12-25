@@ -25,7 +25,7 @@ export class MenuComponent {
   }
 
   get name(): string {
-    return this.active ? 'hamburger' : 'close';
+    return this.active ? 'close' : 'hamburger';
   }
 
   get src(): string {

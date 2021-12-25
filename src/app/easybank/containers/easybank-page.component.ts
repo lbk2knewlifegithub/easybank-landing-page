@@ -11,17 +11,17 @@ import { Article, Feature } from '../models';
     <!--end intro-->
 
     <!-- features -->
-    <lbk-feature-card-list
+    <!-- <lbk-feature-card-list
       *ngIf="features$ | async as features"
       [features]="features"
-    ></lbk-feature-card-list>
+    ></lbk-feature-card-list> -->
     <!-- end features -->
 
     <!--articles-->
-    <lbk-article-preview-list
+    <!-- <lbk-article-preview-list
       *ngIf="articles$ | async as articles"
       [articles]="articles"
-    ></lbk-article-preview-list>
+    ></lbk-article-preview-list> -->
     <!--end articles-->
   `,
 })

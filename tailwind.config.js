@@ -10,24 +10,15 @@ function withOpacity(variableName) {
   };
 }
 
-const isProduction = process.env.NODE_ENV === "production";
-
 module.exports = {
-  mode: "jit",
-  purge: {
-    enabled: isProduction,
-    content: [join(__dirname, "src/**/*.{html,ts}")],
-  },
+  content: [join(__dirname, "src/**/*.{html,ts}")],
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    screens: {
-      tablet: "768px",
-      desktop: "1440px",
-    },
     container: {
       center: true,
       padding: {
-        DEFAULT: "2rem",
+        DEFAULT: "1rem",
+        md: "2rem",
       },
     },
     extend: {
@@ -54,22 +45,14 @@ module.exports = {
     },
   },
   // custom variants
-  variants: {
-    extend: {
-      backgroundColor: ["active"],
-    },
-  },
+  variants: {},
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/line-clamp"),
-    require("@tailwindcss/aspect-ratio"),
-    function ({ addComponents }) {
+    function ({ addComponents}) {
       addComponents({
         ".container": {
-          maxWidth: "100%",
-          "@screen desktop": {
-            maxWidth: "1440px",
-          },
+          maxWidth: "1200px",
         },
       });
     },

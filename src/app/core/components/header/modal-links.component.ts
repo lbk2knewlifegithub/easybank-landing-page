@@ -19,15 +19,11 @@ import {
       *ngIf="open"
       @fadeInOnEnter
       @fadeOutOnLeave
-      class="fixed top-[68px] h-[calc(100%-68px)] left-0 w-full  bg-black/5 z-20"
+      class="fixed top-[68px] h-[calc(100%-68px)] left-0 w-full  bg-black/5 z-50"
     >
       <div class="container">
         <!--  links-->
-        <ul
-          @zoomInOnEnter
-          @zoomOutOnLeave
-          class="bg-white mt-10 grid gap-4 place-content-center py-6 text-center font-medium rounded max-w-md mx-auto"
-        >
+        <ul @zoomInOnEnter @zoomOutOnLeave>
           <li><a class="animate-link" routerLink="/">Home</a></li>
           <li><a class="animate-link" routerLink="/">About</a></li>
           <li><a class="animate-link" routerLink="/">Contact</a></li>
@@ -38,11 +34,23 @@ import {
       </div>
     </div>
   `,
+  styles: [
+    `
+      ul {
+        @apply bg-white mt-10 grid gap-4 place-content-center py-6 text-center font-medium rounded-lg max-w-sm mx-auto md:gap-8 md:py-10;
+        li {
+          a {
+            @apply text-muted hover:text-black;
+          }
+        }
+      }
+    `,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
-    fadeInOnEnterAnimation({delay: 300}),
+    fadeInOnEnterAnimation({ delay: 300 }),
     fadeOutOnLeaveAnimation(),
-    zoomInOnEnterAnimation({ delay: 300}),
+    zoomInOnEnterAnimation({ delay: 300 }),
     zoomOutOnLeaveAnimation(),
   ],
 })

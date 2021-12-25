@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <lbk-header></lbk-header>
 
-    <!-- <router-outlet></router-outlet> -->
+    <router-outlet></router-outlet>
 
     <!--footer-->
     <!-- <lbk-footer></lbk-footer> -->
