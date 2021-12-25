@@ -11,10 +11,11 @@ import { Article, Feature } from '../models';
     <!--end intro-->
 
     <!-- features -->
-    <!-- <lbk-feature-card-list
+    <lbk-feature-card-list
+      class="block mt-32 md:mt-32 lg:mt-[10.8rem] z-[-1]"
       *ngIf="features$ | async as features"
       [features]="features"
-    ></lbk-feature-card-list> -->
+    ></lbk-feature-card-list>
     <!-- end features -->
 
     <!--articles-->

@@ -5,7 +5,7 @@ import { Feature } from '../models/feature.model';
   selector: 'lbk-feature-card',
   template: `
     <div
-      class="grid gap-6 place-items-center mx-auto max-w-md lg:place-items-start"
+      class="grid gap-6 place-items-center mx-auto max-w-md lg:place-items-start lg:max-w-full"
     >
       <!--  icon-->
       <div>

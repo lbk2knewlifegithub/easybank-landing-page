@@ -34,6 +34,7 @@ module.exports = {
       backgroundColor: {
         fill: withOpacity("--bg-fill"),
         footer: withOpacity("--bg-footer"),
+        muted: withOpacity("--bg-muted"),
       },
       borderColor: {
         primary: withOpacity("--border-primary"),
