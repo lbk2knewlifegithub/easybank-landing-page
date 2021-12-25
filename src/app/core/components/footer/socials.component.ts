@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'lbk-socials',
   template: `
     <!--    socials-->
-    <ul class="flex gap-4 text-xl">
+    <ul class="flex gap-6 text-3xl text-white">
       <!--      facebook-->
       <li>
-        <a class="hover:text-primary" href="#">
+        <a routerLink="/" class="link">
           <span class="fab fa-facebook-square"></span>
         </a>
       </li>
@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
 
       <!--      youtube-->
       <li>
-        <a class="hover:text-primary" href="#">
+        <a routerLink="/" class="link">
           <span class="fab fa-youtube"></span>
         </a>
       </li>
@@ -23,7 +23,7 @@ import { Component, OnInit } from '@angular/core';
 
       <!--      twitter-->
       <li>
-        <a class="hover:text-primary" href="#">
+        <a routerLink="/" class="link">
           <span class="fab fa-twitter"></span>
         </a>
       </li>
@@ -31,7 +31,7 @@ import { Component, OnInit } from '@angular/core';
 
       <!--      pinterest-->
       <li>
-        <a class="hover:text-primary" href="#">
+        <a routerLink="/" class="link">
           <span class="fab fa-pinterest"></span>
         </a>
       </li>
@@ -39,7 +39,7 @@ import { Component, OnInit } from '@angular/core';
 
       <!--      instagram-->
       <li>
-        <a class="hover:text-primary" href="#">
+        <a routerLink="/" class="link">
           <span class="fab fa-instagram"> </span>
         </a>
       </li>
@@ -48,8 +48,4 @@ import { Component, OnInit } from '@angular/core';
     <!--    end socials-->
   `,
 })
-export class SocialsComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class SocialsComponent {}

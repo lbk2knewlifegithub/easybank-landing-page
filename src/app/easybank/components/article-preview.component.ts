@@ -4,30 +4,30 @@ import { Article } from '../models/article.model';
 @Component({
   selector: 'lbk-article-preview',
   template: `
-    <div class="">
+    <div class="bg-white shadow-md lg:h-full">
       <!-- image -->
-      <div class="relative aspect-w-16 aspect-h-9 rounded  overflow-hidden">
+      <div class="relative aspect-video rounded overflow-hidden lg:aspect-[16/12]">
         <img
-          class="absolute inset-0 w-full h-full"
+          class="absolute inset-0 w-full h-full object-cover duration-300 hover:scale-110"
           [src]="article.src"
           [alt]="article.name"
         />
       </div>
       <!-- end image -->
 
-      <div class="grid gap-2 py-6 pl-6 pr-4 bg-white">
+      <div class="grid gap-2 pt-6 pb-10 pl-8 pr-4 bg-white lg:pl-6 lg:pb-8">
         <!--    author-->
         <p class="text-muted text-xs">By {{ article.author }}</p>
         <!--    end author-->
 
         <!--    name-->
-        <h6 class="text-lg leading-6 ">
+        <a routerLink="/" class="text-lg leading-6 duration-300 hover:text-primary">
           {{ article.name }}
-        </h6>
+        </a>
         <!--    end name-->
 
         <!--    description-->
-        <p class="text-xs text-muted">{{ article.description }}</p>
+        <p class="text-sm text-muted">{{ article.description }}</p>
         <!--    end description-->
       </div>
     </div>

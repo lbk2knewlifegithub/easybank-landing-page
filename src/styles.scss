@@ -32,11 +32,11 @@
 @layer components {
   //CUSTOM APPLY HERE
   .btn {
-    @apply inline-block duration-300 rounded-full px-6 py-3 tracking-wide  font-semibold text-sm lg:py-3 lg:font-bold lg:text-base lg:px-8;
+    @apply inline-block duration-300 rounded-full px-6 py-3 tracking-wide  font-semibold text-sm lg:py-3 lg:font-bold lg:text-base lg:px-8 hover:brightness-150;
   }
 
   .btn-primary {
-    @apply text-white bg-gradient-to-r from-lime-green to-bright-cyan hover:opacity-70;
+    @apply text-white bg-gradient-to-r from-lime-green to-bright-cyan;
   }
 
   .background {
@@ -75,6 +75,10 @@
       transform-origin: left;
       transform: rotate(-180deg);
     }
+  }
+
+  .link {
+    @apply duration-300 hover:text-primary;
   }
 }
 

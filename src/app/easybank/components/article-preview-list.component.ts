@@ -4,12 +4,12 @@ import { Article } from '../models/article.model';
 @Component({
   selector: 'lbk-article-preview-list',
   template: `
-    <div class="container mt-40 lg:mt-48">
-      <h1 class="text-center font-medium text-3xl lg:text-4xl lg:text-left">
+    <div class="container mt-28 lg:mt-32">
+      <h2 class="text-center text-3xl lg:text-4xl lg:text-left">
         Latest Articles
-      </h1>
+      </h2>
 
-      <div class="mt-10 grid gap-14 md:grid-cols-2 lg:grid-cols-4">
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:mt-12">
         <ng-container *ngFor="let article of articles">
           <lbk-article-preview [article]="article"></lbk-article-preview>
         </ng-container>

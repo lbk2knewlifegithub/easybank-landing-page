@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     <router-outlet></router-outlet>
 
     <!--footer-->
-    <!-- <lbk-footer></lbk-footer> -->
+    <lbk-footer class="block mt-32"></lbk-footer>
     <!--end footer-->
   `,
 })

@@ -19,10 +19,10 @@ import { Article, Feature } from '../models';
     <!-- end features -->
 
     <!--articles-->
-    <!-- <lbk-article-preview-list
+    <lbk-article-preview-list
       *ngIf="articles$ | async as articles"
       [articles]="articles"
-    ></lbk-article-preview-list> -->
+    ></lbk-article-preview-list>
     <!--end articles-->
   `,
 })
@@ -33,5 +33,9 @@ export class EasybankPageComponent {
   constructor() {
     this.features$ = of(fromData.features);
     this.articles$ = of(fromData.articles);
+
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    }, 100);
   }
 }
