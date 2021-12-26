@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import {
   ArticlePreviewComponent,
   ArticlesPreviewListComponent,
-  FeaturePreviewComponent,
   FeatureCardListComponent,
+  FeaturePreviewComponent,
   IntroComponent
 } from './components';
 import { EasybankPageComponent } from './containers';

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'lbk-root',
   template: `
-    <lbk-header></lbk-header>
+    <lbk-header ></lbk-header>
 
     <router-outlet></router-outlet>
 

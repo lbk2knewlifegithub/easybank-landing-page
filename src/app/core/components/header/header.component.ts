@@ -4,7 +4,9 @@ import { slideInDownOnEnterAnimation } from 'angular-animations';
 @Component({
   selector: 'lbk-header',
   template: `
-    <header @slideInDownOnEnter class="relative shadow-sm bg-white lg:z-50 lg:absolute lg:w-full ">
+    <header
+      class="relative shadow-sm bg-white lg:z-50 lg:absolute lg:w-full "
+    >
       <nav class="container py-6 flex items-center justify-between lg:py-4 ">
         <!--    logo-->
         <lbk-logo></lbk-logo>
